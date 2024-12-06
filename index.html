@@ -19,12 +19,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.crossOrigin="an
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 	
 	<script>
-		performance.mark('css:start');
+		performance.mark('CSS:start');
 	</script>
 	<link rel="stylesheet" href="css/style.css" />
 	<script>
-		performance.mark('css:end');
-		performance.measure('css', 'css:start', 'css:end');
+	performance.measure("CSS", {
+	  start: "CSS:start",
+	  detail: {
+	    devtools: {
+	      dataType: "track-entry",
+	      track: "CSS",
+	      trackGroup: "My Tracks",
+	      color: "tertiary-dark",
+	      properties: [
+	        ["Filter Type", "Gaussian Blur"],
+	        ["Resize Dimensions", "500x300"]
+	      ],
+	      tooltipText: "Image processed successfully"
+	    }
+	  }
+	});
 	</script>
 
     <script src="js/search.js"></script>
