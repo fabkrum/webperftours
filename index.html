@@ -17,8 +17,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.crossOrigin="an
     <meta name="description" content="Explore the world" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css" />
+	
+	<script>
+		performance.mark('css:start');
+	</script>
+	<link rel="stylesheet" href="css/style.css" />
+	<script>
+		performance.mark('css:end');
+		performance.measure('css', 'css:start', 'css:end');
+	</script>
 
     <script src="js/search.js"></script>
     <script src="js/newsletter.js"></script>
